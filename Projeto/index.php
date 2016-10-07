@@ -52,7 +52,7 @@ require_once("logica-usuario.php");
     
     .txtIndex:hover
     {
-        border-width: 3px; 
+        border-width: 2px; 
     }
 </style>
     <title>Pagina Inicial</title>
