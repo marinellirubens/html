@@ -41,18 +41,28 @@ require_once("logica-usuario.php");
         height: 40%; 
         margin: 0 auto;
     }
-    .txtIndex
+    .txtIndex , .txtIndex2
     {
         border-style: solid; 
         border-color: #aabbdd; 
-        border-radius: 3px; 
         border-width: 1px; 
-        height: 25px;
+        height: 30px;
+        width: 85%;
+    }
+    .txtIndex
+    {
+        border-radius: 5px 5px 0px 0px; 
+    }
+
+    .txtIndex2
+    {
+        border-radius: 0px 0px 5px 5px; 
     }
     
-    .txtIndex:hover
+    
+    .txtIndex:hover , .txtIndex2:hover
     {
-        border-width: 2px; 
+        border-color: #6666ff; 
     }
 </style>
     <title>Pagina Inicial</title>
@@ -74,13 +84,11 @@ if(usuarioEstaLogado())
         <br>
         <div class="CardLogin" >
             <center>
-                <h2>Login</h2>
-                
-                <div style="margin: 0 auto; ">
+                <div style="margin: 0 auto; height: 34px; ">
                     <input class="txtIndex" type="email" name="email" placeholder="Email" required />
                 </div>
-                <div style="margin: 5px auto; ">
-                    <input  class="txtIndex" type="password" name="senha" placeholder="password" required />
+                <div style="margin: 0 auto; height: 34px;  ">
+                    <input  class="txtIndex2" type="password" name="senha" placeholder="password" required />
                 </div>
                 <div style="  height: 20px; margin: 20px auto; ">
                     <button style="border-style: solid; border-color: #aabbdd; border-radius: 3px; border-width: 1px; width: 100px; height: 25px; ">
