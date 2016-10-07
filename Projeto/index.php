@@ -41,6 +41,19 @@ require_once("logica-usuario.php");
         height: 40%; 
         margin: 0 auto;
     }
+    .txtIndex
+    {
+        border-style: solid; 
+        border-color: #aabbdd; 
+        border-radius: 3px; 
+        border-width: 1px; 
+        height: 25px;
+    }
+    
+    .txtIndex:hover
+    {
+        border-width: 3px; 
+    }
 </style>
     <title>Pagina Inicial</title>
 </head>
@@ -64,10 +77,10 @@ if(usuarioEstaLogado())
                 <h2>Login</h2>
                 
                 <div style="margin: 0 auto; ">
-                    <input class="form-control" style=" border-style: solid; border-color: #aabbdd; border-radius: 3px; border-width: 1px; height: 25px;" type="email" name="email" placeholder="Email" required />
+                    <input class="txtIndex" type="email" name="email" placeholder="Email" required />
                 </div>
                 <div style="margin: 5px auto; ">
-                    <input class="form-control"  style="border-style: solid; border-color: #aabbdd; border-radius: 3px; border-width: 1px; height: 25px;" type="password" name="senha" placeholder="password" required />
+                    <input  class="txtIndex" type="password" name="senha" placeholder="password" required />
                 </div>
                 <div style="  height: 20px; margin: 20px auto; ">
                     <button style="border-style: solid; border-color: #aabbdd; border-radius: 3px; border-width: 1px; width: 100px; height: 25px; ">
