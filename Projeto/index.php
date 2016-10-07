@@ -84,6 +84,7 @@ if(usuarioEstaLogado())
         <br>
         <div class="CardLogin" >
             <center>
+                <h2>Login</h2>
                 <div style="margin: 0 auto; height: 34px; ">
                     <input class="txtIndex" type="email" name="email" placeholder="Email" required />
                 </div>
