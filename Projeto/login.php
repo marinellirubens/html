@@ -2,7 +2,7 @@
 require_once("banco-usuario.php");
 require_once("logica-usuario.php");
 //var_dump($_POST);
-$usuario = buscaUsuario($conexao, $_POST["email"], $_POST["senha"]);
+$usuario = buscaUsuario($conexao, $_POST["usuario"], $_POST["senha"]);
 
 if($usuario == null)
 {

@@ -1,5 +1,9 @@
 <?php 
-require_once("logica-usuario.php");
+require_once("menu.php");
 ?>
-<p class="text-success">Você está logado como <?= usuarioLogado() ?>.</p>
-<a href="logout.php">Deslogar</a></p>
+<!--<p class="text-success">Você está logado como <?= usuarioLogado() ?>.</p>-->
+
+
+<?php 
+require_once("rodape.php");
+?>

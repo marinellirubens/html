@@ -30,3 +30,7 @@
 			session_destroy();
 			session_start();
 		}
+
+		function cadastraUsuario(){
+			
+		}

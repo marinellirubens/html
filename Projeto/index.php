@@ -46,6 +46,7 @@ require_once("logica-usuario.php");
         border-style: solid; 
         border-color: #aabbdd; 
         border-width: 1px; 
+        font-size: 15px;
         height: 30px;
         width: 85%;
     }
@@ -86,7 +87,7 @@ if(usuarioEstaLogado())
             <center>
                 <h2>Login</h2>
                 <div style="margin: 0 auto; height: 34px; ">
-                    <input class="txtIndex" type="email" name="email" placeholder="Email" required />
+                    <input class="txtIndex" type="text" id="usuario" name="usuario" placeholder="Usuario" required />
                 </div>
                 <div style="margin: 0 auto; height: 34px;  ">
                     <input  class="txtIndex2" type="password" name="senha" placeholder="password" required />
