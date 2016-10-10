@@ -7,6 +7,7 @@
 -- Versão do servidor: 5.6.21
 -- PHP Version: 5.6.3
 
+
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
 
@@ -74,17 +75,19 @@ INSERT INTO `produtos` (`id`, `nome`, `preco`, `descricao`, `categoria_id`, `usa
 --
 
 CREATE TABLE IF NOT EXISTS `usuarios` (
-`id` int(11) NOT NULL,
-  `email` varchar(255) DEFAULT NULL,
-  `senha` varchar(255) DEFAULT NULL
+id int(11) NOT NULL,
+  email varchar(255) DEFAULT NULL,
+  senha varchar(255) DEFAULT NULL,
+  usuario varchar(255)  DEFAULT NULL
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
 
 --
 -- Extraindo dados da tabela `usuarios`
 --
+alter table usuarios add constraint unique uk_usuario(usuario);
 
-INSERT INTO `usuarios` (`id`, `email`, `senha`) VALUES
-(1, 'teste@teste.com', 'e10adc3949ba59abbe56e057f20f883e');
+INSERT INTO `usuarios` (`id`, `email`, `senha`, `usuario`) VALUES
+(1, 'teste@teste.com', 'e10adc3949ba59abbe56e057f20f883e','root');
 
 --
 -- Indexes for dumped tables
